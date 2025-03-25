@@ -21,5 +21,5 @@ int calcContigousSubArray(int arr[],int lastIndex) {
 			diff=currDif;
 		}
 	}
-		
+	return result;	
 }
