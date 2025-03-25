@@ -4,10 +4,10 @@
 #include "header.h"
 int calcContigousSubArray(int arr[],int lastIndex) {
 	int i;
-	int len=1;
+	int len=2;
 	int result=0;
 	int diff=abs(arr[0]-arr[1]);
-	for (i = 1; i < lastIndex; i++) {
+	for (i = 2; i <= lastIndex; i++) {
 		int currDif=abs(arr[i-1]-arr[i]);
 		if (diff==currDif){
 			len++;
@@ -17,7 +17,7 @@ int calcContigousSubArray(int arr[],int lastIndex) {
 		}
 		else {
 			result+=subarrays(len);
-			len=0;
+			len=2;
 			diff=currDif;
 		}
 	}
