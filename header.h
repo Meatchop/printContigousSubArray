@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-void printDepartureTime(int arrivalTime,float kmDistance, float speed);
-
-int calculateDepartureTime(int arrivalTime,float kmDistance, float speed);
-
-int calculateTravelTime(float kmDistance, float speed);
+void printContigousSubArray(int arr[], int lastIndex);
+int calcContigousSubArray(int arr[],int lastIndex);
+int subarrays(int len);
