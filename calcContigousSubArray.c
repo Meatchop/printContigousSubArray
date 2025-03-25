@@ -11,7 +11,9 @@ int calcContigousSubArray(int arr[],int lastIndex) {
 		int currDif=abs(arr[i-1]-arr[i]);
 		if (diff==currDif){
 			len++;
-			result+=subarrays(len);
+			if (i==lastIndex) {
+				result+=subarrays(len);
+			}
 		}
 		else {
 			result+=subarrays(len);
